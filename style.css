@@ -1,0 +1,128 @@
+* {
+    /*tag universal*/
+    margin: 0;
+    /*o proprio navegador já coloca esses elementos*/
+    padding: 0;
+    /*é o preenchimento da caixa*/
+    /*zerando eles, futuramente podemos trabalhar eles*/
+    box-sizing: border-box;
+    /*medida da caixa*/
+    /*border-box é a medida da caixa pela largura*/
+    /**/
+}
+
+a {
+    text-decoration: none;
+}
+
+html {
+    /*variáveis*/
+    --bg-color: #1C1C1C;
+    --text-color: #FFFAFA;
+}
+
+body {
+    background: var(--bg-color);
+    color: #FFFFFF;
+    --box-link: #FF4500;
+    --hover-color: #FF8C00;
+
+    font-family: 'Roboto', sans-serif;
+}
+
+body.off-white {
+    --bg-color: #F8F8FF;
+    --text-color: #0d0e0e;
+    --box-link: #B0E0E6;
+    --hover-color: #E0FFFF;
+}
+
+body.wall-blue {
+    --bg-color: #00BFFF;
+    --text-color: #0d0e0e;
+    --box-link: #00FFFF;
+    --hover-color: #87CEFA;
+}
+
+.login {
+    font-size: 32px;
+    color: var(--text-color);
+    margin-top: 24px;
+    margin-bottom: 8px;
+}
+
+.userName {
+    font-family: 'Roboto Mono', monospace;
+    color: var(--text-color);
+    width: 400;
+    font-size: 18px;
+    opacity: 0.8;
+}
+
+.container {
+    /*border: 7px blue solid; /*borda - usada para referencia visual*/
+    text-align: center;
+    /*centralizar os textos da imagem*/
+    width: 300px;
+    /*tamanho da borda*/
+    margin: 60px auto;
+    /*centralizar aplicação*/
+    padding: 0px 40px;
+}
+
+img {
+    width: 100%;
+    /*imagem acompanha o tamanho da width*/
+}
+
+img.Perfil {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    border: var(--box-link) solid 4px;
+    padding: 4px;
+}
+
+ul {
+    list-style: none;
+    /*apaga o estilo da lista no html*/
+    margin: 40px 0;
+}
+
+
+ul li a {
+    height: 53px;
+    /* border: 1px solid blue;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--box-link);
+    /* hexadecimal: 0 - F*/
+    color: var(--text-color);
+    /*cor da letra*/
+    text-transform: uppercase;
+    /*caixa alta nas letras*/
+    font-size: 14px;
+    margin-bottom: 16px;
+    border-radius: 8%;
+    transition: background 400ms;
+    /*transição da cor do backgroud de hover*/
+}
+
+/*pseudo-class*/
+/*não pode ter espaço entre a tag e a subclass*/
+ul li a:hover {
+    background: var(--hover-color);
+}
+
+footer {
+    font-weight: 500;
+    font-size: 12px;
+    color: var(--text-color);
+    opacity: 0.4;
+    transition: opacity 400ms;
+}
+
+footer:hover {
+    opacity: 1;
+}
